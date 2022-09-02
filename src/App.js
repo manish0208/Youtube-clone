@@ -1,10 +1,26 @@
 
 import './App.css';
+import youtube from "./api/youtube";
+import { Grid } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
-      <h1>video sharing app</h1>
+      <Grid style={{justifyContent: "center"}} container spacing={10}>
+        <Grid item xs={11}>
+          <Grid container spacing={10}>
+            <Grid item xs={12}>
+              {/* {Searchbar} */}
+            </Grid>
+            <Grid item xs={8}>
+              {/* {VideoDetail} */}
+            </Grid>
+            <Grid item xs={4}>
+              {/* {VideoList} */}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </div>
   );
 }
