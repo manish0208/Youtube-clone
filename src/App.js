@@ -5,11 +5,12 @@ import { Grid } from "@material-ui/core";
 import SearchBar from './Components/SearchBar';
 import {useState} from 'react';
 import React from 'react';
+import VideoDetail from './Components/VideoDetail';
 
 function App() {
 
   const [videos, setVideos] = useState([]);
-  const [selectedVideo, setSelectedVideos] = useState({id: {}, snippet: {}})
+  const [selectedVideo, setSelectedVideos] = useState({id: {}, snippet: {}});
 
   return (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
               <SearchBar onSubmit={handleSubmit} />
             </Grid>
             <Grid item xs={8}>
-              {/* {VideoDetail} */}
+              <VideoDetail video={selectedVideo}/>
             </Grid>
             <Grid item xs={4}>
               {/* {VideoList} */}

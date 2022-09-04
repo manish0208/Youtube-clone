@@ -21,9 +21,7 @@ const SearchBar = ({ onSubmit }) => {
                 value={searchTerm}
                 onChange={handleChange}
                 onKeyPress={onKeyPress}
-            >
-
-            </TextField>
+            />
         </Paper>
     )
 }
